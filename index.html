@@ -102,10 +102,12 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Sites</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
                 </ul>
-                <span class="navbar-text ml-auto"></span>
-                <a role="button" data-toggle="modal" data-target="#loginModal">
-                    <i class="fa fa-sign-in text-white">Login</i>
-                </a>
+                <!-- Login Button -->
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in text-white">Login</i>
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
@@ -297,7 +299,7 @@
 <!-- JQuery for play and pause buttons of the carousel -->
     <script>
         $(function() {
-            $(".carousel").carousel( { interval: 500 } );
+            $(".carousel").carousel( { interval: 2000 } );
             $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("i").hasClass("fa-pause")) {
                     $(".carousel").carousel("pause");
